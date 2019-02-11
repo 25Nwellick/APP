@@ -71,11 +71,7 @@ start:
 				std::cout << "Good job,here are a couple of things to prepare you for " << std::endl;
 
 
-			//tuka sakam da go vmetnam ^^ ama mi dava errorsdeka se undeclared
-
-
-
-				//Planiram i selektivno da se sporeduvaat ocenkite i da moze da mu se dade na korisnikot predmeti na koj treba da obrne povekje vnimanie i resursi koi ke mu bidat dadeni za toa
+			//glaven problem imam sega da mozam da otvoram strana,ama Shell ne funkcionira
 
 
 		
