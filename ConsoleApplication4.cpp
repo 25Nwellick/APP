@@ -29,60 +29,59 @@ start:
 	bool foundUpperLetter = false;
 	for (int x = 0; x <= password.length(); x++)
 	{
-		if (foundUpperLetter == true)
-
-
 			if (password[x] >= 'A' / 65 && password[x] <= 'Z' / 90)
 				foundUpperLetter = true;
 
-		std::vector<int> grades;
-		std::vector<std::string> classes{ "Math", "Biology", "Chemistry"," Physics", "Geography", "Macedonian", "English", "French", "Art", "Music", "History", "P.E", "Programming" };
-		std::string temp;
+			if (foundUpperLetter == true) {
 
-		for (std::string str : classes)
-		{
+				std::vector<int> grades;
+				std::vector<std::string> classes{ "Math", "Biology", "Chemistry"," Physics", "Geography", "Macedonian", "English", "French", "Art", "Music", "History", "P.E", "Programming" };
+				std::string temp;
 
-			std::cout << "Enter grades for " + str + ": ";
-			std::cin >> temp;
-			grades.push_back(std::stoi(temp));
+				for (std::string str : classes)
+				{
 
-		}
+					std::cout << "Enter grades for " + str + ": ";
+					std::cin >> temp;
+					grades.push_back(std::stoi(temp));
 
-		double GPA = 0;
+				}
 
-		for (int grade : grades) {
-			GPA += grade;
+				double GPA = 0;
 
-		}
+				for (int grade : grades) {
+					GPA += grade;
 
-		GPA /= classes.size();
-		std::cout << "gpa: " << GPA << "\n";
+				}
 
-		if (GPA <= 3)
-			std::cout << "You sure avoid studying" << std::endl;
-		//planiram so sekoj tip na GPA da se otvori strana
+				GPA /= classes.size();
+				std::cout << "gpa: " << GPA << "\n";
 
-		break;
-		if (GPA >= 3 && GPA <= 4)
-			std::cout << " Things sometimes happen dude,hopefully you can get to a 4.5" << std::endl;
+				if (GPA <= 3)
+					std::cout << "You sure avoid studying" << std::endl;
+				//planiram so sekoj tip na GPA da se otvori strana
 
-
-		if (GPA >= 4.5)
-
-			int a;
-		
-		std::string url = "https://www.youtube.com/watch?v=r5rZnu8fNGw";
-		
-			ShellExecute(NULL, "open", url.c_str(), NULL, NULL, SW_SHOWNORMAL);
-			
-		//tuka sakam da go vmetnam ^^ ama mi dava errorsdeka se undeclared
+				break;
+				if (GPA >= 3 && GPA <= 4)
+					std::cout << " Things sometimes happen dude,hopefully you can get to a 4.5" << std::endl;
 
 
+				if (GPA >= 4.5)
 
-			//Planiram i selektivno da se sporeduvaat ocenkite i da moze da mu se dade na korisnikot predmeti na koj treba da obrne povekje vnimanie i resursi koi ke mu bidat dadeni za toa
+					int a;
+
+				std::string url = "https://www.youtube.com/watch?v=r5rZnu8fNGw";
+
+				ShellExecute(NULL, "open", url.c_str(), NULL, NULL, SW_SHOWNORMAL);
+
+				//tuka sakam da go vmetnam ^^ ama mi dava errorsdeka se undeclared
 
 
 
+					//Planiram i selektivno da se sporeduvaat ocenkite i da moze da mu se dade na korisnikot predmeti na koj treba da obrne povekje vnimanie i resursi koi ke mu bidat dadeni za toa
+
+
+			}
 	}
 	if (!foundUpperLetter)
 	{
