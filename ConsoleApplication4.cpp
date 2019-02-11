@@ -1,4 +1,4 @@
-//
+
 #include <windows.h>
 #include "pch.h"
 #include <iostream>
@@ -6,6 +6,9 @@
 #include <vector>
 #include <stdio.h>
 
+//imam vo plan da napravam database kadeshto ke gi imaat user podatocite na ucenicite (accounts,passwords,GPA etc) koi ke mozat da bidat povikuvani pri sekoe uklucuvanje na programata.Takashto da moze samiot ucenik samo da se logira pri sledniot pat koga ke saka da ja koristi programata.
+//ova preferirano bi go napravil vo GUI 
+//Bi dodal elementi kadeshto ke bide dadena opcija na ucenikot da odbere koja godina e i vrz osnova na toa da mu bidat dadeni poinakvi materijali 
 
 int main()
 {
@@ -56,28 +59,27 @@ start:
 		std::cout << "gpa: " << GPA << "\n";
 
 		if (GPA <= 3)
-			std::cout << "Damn, you must avoid studying,because you're going to korchagin i do recommend you to start otherwise your education is useless,thank you for your time" << std::endl;
+			std::cout << "You sure avoid studying" << std::endl;
+		//planiram so sekoj tip na GPA da se otvori strana
+
 		break;
 		if (GPA >= 3 && GPA <= 4)
 			std::cout << " Things sometimes happen dude,hopefully you can get to a 4.5" << std::endl;
+
+
 		if (GPA >= 4.5)
+
 			int a;
-		int b = 0;
-		std::cin >> a;
-		std::string url;
-		std::cout << "Enter url: ";
-		std::cin >> url;
-		std::cout << "how many times do you want to open the url?: ";
-		std::cin >> a;
-		while (b < a)
-		{
+		
+		std::string url = "https://www.youtube.com/watch?v=r5rZnu8fNGw";
+		
 			ShellExecute(NULL, "open", url.c_str(), NULL, NULL, SW_SHOWNORMAL);
-			b++;
-		}
-
-		//tuka sakam da vmetnam ShellExecute ama poradi nekoja pricina mi dava preku 100 errors
+			
+		//tuka sakam da go vmetnam ^^ ama mi dava errorsdeka se undeclared
 
 
+
+			//Planiram i selektivno da se sporeduvaat ocenkite i da moze da mu se dade na korisnikot predmeti na koj treba da obrne povekje vnimanie i resursi koi ke mu bidat dadeni za toa
 
 
 
